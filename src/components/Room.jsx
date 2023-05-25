@@ -18,7 +18,7 @@ const Room = ({user = null, db = null}) => {
         <div>
             {!inRoom?(
             <form onSubmit={handleOnSubmit}>
-                <input onChange={handleOnChange} type="text" />
+                <input onChange={handleOnChange} placeholder="Enter Room name" type="text" />
                 <button type="Submit" disabled={!room}>Send</button>
             </form>
             ): (
